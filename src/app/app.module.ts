@@ -5,17 +5,33 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { LoginComponent } from './composants/login/login.component';
+import { RouterModule, Routes } from '@angular/router';
+import { StatsComponent } from './composants/stats/stats.component';
+import { MnistComponent } from './composants/mnist/mnist.component';
+import { STATUS_CODES } from 'http';
 
+const appRoutes: Routes = [
+  { path: 'login', component: LoginComponent},
+  { path: 'mnist', component: MnistComponent},
+  { path: 'stats', component: StatsComponent}
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    StatsComponent,
+    MnistComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    NgbModule
+    NgbModule,
+    RouterModule.forRoot(
+      appRoutes
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
