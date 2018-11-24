@@ -10,7 +10,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { StatsComponent } from './composants/stats/stats.component';
 import { MnistComponent } from './composants/mnist/mnist.component';
 import { STATUS_CODES } from 'http';
-import { SidebarComponent } from './composants/sidebar/sidebar.component';
+import { FooterComponent } from './composants/footer/footer.component';
+import { NavbarComponent } from './composants/navbar/navbar.component';
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent},
@@ -24,7 +25,8 @@ const appRoutes: Routes = [
     LoginComponent,
     StatsComponent,
     MnistComponent,
-    SidebarComponent
+    FooterComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
