@@ -15,4 +15,7 @@ export class SessionService {
       this.isConnected = true;
     }
   }
+  logout(){
+    this.isConnected = false;
+  }
 }

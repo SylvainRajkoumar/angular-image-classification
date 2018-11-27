@@ -6,18 +6,44 @@ import { MonitoringService } from '../../services/monitoring.service';
   templateUrl: './mnist.component.html',
   styleUrls: ['./mnist.component.css']
 })
-export class MnistComponent implements OnInit {
-  selectedFile :File = null;
-  onFileSelected(event){
-    this.selectedFile = <File>event.target.files[0];
-    console.log(event);
-  }
+export class MnistComponent {
 
   constructor(public monitoringService: MonitoringService) {
     this.monitoringService.incrementMnistUsage();
    }
 
-  ngOnInit() {
+  selectedFile :File = null;
+  
+  public chartType:string = 'bar';
+
+    public chartDatasets:Array<any> = [
+        {data: [0, 59, 80, 81, 56, 55, 40, 50, 50, 50], label: 'Tensorflow Classification Percentage'}
+    ];
+
+    public chartLabels:Array<any> = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+
+    public chartColors:Array<any> = [
+        {
+            backgroundColor: 'rgba(0,0,0,0.2)',
+            borderColor: 'rgba(255,0,0,1)',
+            borderWidth: 2,
+            pointBackgroundColor: 'rgba(220,220,220,1)',
+            pointBorderColor: '#fff',
+            pointHoverBackgroundColor: '#fff',
+            pointHoverBorderColor: 'rgba(220,220,220,1)'
+        }
+    ];
+
+    public chartOptions:any = {
+        responsive: true
+    };
+    public chartClicked(e: any): void { }
+    public chartHovered(e: any): void { }
+
+  onFileSelected(event){
+    this.selectedFile = <File>event.target.files[0];
+    console.log(event);
   }
+
 
 }

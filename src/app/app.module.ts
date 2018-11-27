@@ -13,6 +13,7 @@ import { FooterComponent } from './composants/footer/footer.component';
 import { NavbarComponent } from './composants/navbar/navbar.component';
 import { SessionService } from './services/session.service';
 import { MonitoringService } from './services/monitoring.service';
+import { MDBBootstrapModule } from 'angular-bootstrap-md'
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent},
@@ -36,7 +37,8 @@ const appRoutes: Routes = [
     NgbModule,
     RouterModule.forRoot(
       appRoutes
-    )
+    ),
+    MDBBootstrapModule.forRoot()
   ],
   providers: [SessionService, MonitoringService],
   bootstrap: [AppComponent]
