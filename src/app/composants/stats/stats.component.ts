@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class StatsComponent implements OnInit {
 
-  constructor(private sessionService: SessionService,
+  constructor(public sessionService: SessionService,
     private router: Router) { 
     if(this.sessionService.isConnected == false){
       this.router.navigate(['/login']);

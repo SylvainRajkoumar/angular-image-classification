@@ -10,7 +10,7 @@ import { SessionService } from './services/session.service';
 export class AppComponent {
   title = 'app works!';
   
-  constructor(private sessionService: SessionService){
+  constructor(public sessionService: SessionService){
 
   }
 
