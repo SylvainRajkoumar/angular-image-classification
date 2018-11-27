@@ -12,6 +12,7 @@ import { STATUS_CODES } from 'http';
 import { FooterComponent } from './composants/footer/footer.component';
 import { NavbarComponent } from './composants/navbar/navbar.component';
 import { SessionService } from './services/session.service';
+import { MonitoringService } from './services/monitoring.service';
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent},
@@ -37,7 +38,7 @@ const appRoutes: Routes = [
       appRoutes
     )
   ],
-  providers: [SessionService],
+  providers: [SessionService, MonitoringService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

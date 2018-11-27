@@ -291,6 +291,13 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
+"@ng-bootstrap/ng-bootstrap@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@ng-bootstrap/ng-bootstrap/-/ng-bootstrap-4.0.0.tgz#e56aafc8e3ae900b88d528303a5962cc363088ed"
+  integrity sha512-jWVHRDUYppOSvzclP9d3lVWGUO+y0X9W6jdfyYehDkJCY0MFgtwefLYMtQ/NJ4niPzm2d/zZn+Bte48iIn0nKw==
+  dependencies:
+    tslib "^1.9.0"
+
 "@ngtools/webpack@7.0.6":
   version "7.0.6"
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-7.0.6.tgz#cc4f4189765f6743417b4eee946fb69590f93ce1"
@@ -4246,6 +4253,11 @@ md5.js@^1.3.4:
     hash-base "^3.0.0"
     inherits "^2.0.1"
     safe-buffer "^5.1.2"
+
+mdbootstrap@^4.5.15:
+  version "4.5.15"
+  resolved "https://registry.yarnpkg.com/mdbootstrap/-/mdbootstrap-4.5.15.tgz#e855dd3a4832bb80c7a788a6bda0667d5fb1dd23"
+  integrity sha512-hcdPnDajToMbWg1uh0n6AHLld0RBfis3Ep/KCC4RExtkhnSwjy+qhoVuPv2BGjgtRNvEwWfqbypPcrAw5TFawg==
 
 media-typer@0.3.0:
   version "0.3.0"

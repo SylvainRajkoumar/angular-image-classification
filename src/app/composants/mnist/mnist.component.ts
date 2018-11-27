@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MonitoringService } from '../../services/monitoring.service';
 
 @Component({
   selector: 'app-mnist',
@@ -12,7 +13,9 @@ export class MnistComponent implements OnInit {
     console.log(event);
   }
 
-  constructor() { }
+  constructor(public monitoringService: MonitoringService) {
+    this.monitoringService.incrementMnistUsage();
+   }
 
   ngOnInit() {
   }
