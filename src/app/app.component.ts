@@ -13,8 +13,4 @@ export class AppComponent {
   constructor(public sessionService: SessionService){
 
   }
-
-  triggerLogout(){
-    this.sessionService.logout()
-  }
 }

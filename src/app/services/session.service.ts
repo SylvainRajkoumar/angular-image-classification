@@ -4,22 +4,15 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class SessionService {
-
-  constructor() { }
-
   validEmail = 'Test';
   validPassword = '1234';
   isConnected = false;
+
+  constructor() {}
 
   login(email, password){
     if(email == this.validEmail && password == this.validPassword){
       this.isConnected = true;
     }
   }
-
-  logout(){
-    this.isConnected = false;
-  }
-
-
 }

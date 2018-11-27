@@ -13,7 +13,8 @@ export class StatsComponent implements OnInit {
     private router: Router) { 
     if(this.sessionService.isConnected == false){
       this.router.navigate(['/login']);
-    }
+      console.log("DECONNECTE")
+    } 
   }
 
   ngOnInit() {
