@@ -44,16 +44,14 @@ export class MnistComponent {
   onFileSelected(event){
     this.selectedFile = <File>event.target.files[0];
     console.log(event);
-    this.chartDatasets[0].data = [0, 59, 1000, 81, 56, 55, 40, 50, 50, 50];
-    console.log(this.chartDatasets[0].data);
-    this.chartClicked(5):
-    // path = null;
+    // let path = event.target.files[0].value; 
     // this.tensorflowProcessing(path);
   }
 
   tensorflowProcessing(imagePath){
-
+    console.log(String(imagePath))
+    this.chartDatasets = [
+      {data: [0, 59, 80, 100, 500, 1000, 40, 50, 50, 50], label: 'Tensorflow Classification Percentage'}
+  ];
   }
-
-
 }
