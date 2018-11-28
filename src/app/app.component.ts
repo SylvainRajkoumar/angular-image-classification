@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SessionService } from './services/session.service';
+import { MnistClassificationService } from './services/mnist-classification.service';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,7 @@ import { SessionService } from './services/session.service';
 export class AppComponent {
   title = 'app works!';
   
-  constructor(public sessionService: SessionService){
-
+  constructor(public test: MnistClassificationService){
+      this.test.loadModel();
   }
 }

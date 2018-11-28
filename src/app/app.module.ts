@@ -14,6 +14,7 @@ import { NavbarComponent } from './composants/navbar/navbar.component';
 import { SessionService } from './services/session.service';
 import { MonitoringService } from './services/monitoring.service';
 import { MDBBootstrapModule } from 'angular-bootstrap-md'
+import { MnistClassificationService }from './services/mnist-classification.service';
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent},
@@ -40,7 +41,7 @@ const appRoutes: Routes = [
     ),
     MDBBootstrapModule.forRoot()
   ],
-  providers: [SessionService, MonitoringService],
+  providers: [SessionService, MonitoringService, MnistClassificationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

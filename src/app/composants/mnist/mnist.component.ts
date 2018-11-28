@@ -47,11 +47,14 @@ export class MnistComponent {
     // let path = event.target.files[0].value; 
     // this.tensorflowProcessing(path);
   }
-
+  // loadImage(){
+  //   const image = document.getElementById('image');
+  //   console.log(image)
+  // }
   tensorflowProcessing(imagePath){
     console.log(String(imagePath))
     this.chartDatasets = [
       {data: [0, 59, 80, 100, 500, 1000, 40, 50, 50, 50], label: 'Tensorflow Classification Percentage'}
-  ];
+    ];
   }
 }

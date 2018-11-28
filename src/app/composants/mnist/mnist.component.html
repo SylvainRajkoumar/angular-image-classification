@@ -1,7 +1,8 @@
 <div class="file btn btn-lg btn-primary">
-        Choose File
+    Choose File
 <input type="file" (change)="onFileSelected($event)"/>
 </div>
+
 <div style="display: block;height:500px;width:500px">
     <canvas mdbChart
         [chartType]="chartType"
@@ -14,3 +15,8 @@
         (chartClick)="chartClicked($event)">
     </canvas>
 </div>
+<!-- 
+<div class="file btn btn-lg btn-primary">
+    Choose File
+<input type="file" name="image" (change)="loadImage()"/>
+</div> -->
