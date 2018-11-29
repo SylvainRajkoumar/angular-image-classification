@@ -14,7 +14,7 @@ export class StatsComponent implements OnInit {
 
   public chartData:Array<any> = [1 ,  1];
 
-  public chartLabels:Array<any> = ['Red', 'Green'];
+  public chartLabels:Array<any> = ['Mnist', 'Test'];
 
   public chartColors:Array<any> = [{
       hoverBorderColor: ['rgba(0, 0, 0, 0.1)', 'rgba(0, 0, 0, 0.1)'],

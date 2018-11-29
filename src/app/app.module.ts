@@ -14,7 +14,7 @@ import { NavbarComponent } from './composants/navbar/navbar.component';
 import { SessionService } from './services/session.service';
 import { MonitoringService } from './services/monitoring.service';
 import { MDBBootstrapModule } from 'angular-bootstrap-md'
-import { MnistClassificationService }from './services/mnist-classification.service';
+import { MnistClassificationService } from './services/mnist-classification.service';
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent},

@@ -1,14 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { MonitoringService } from '../../services/monitoring.service';
+import { MnistClassificationService } from '../../services/mnist-classification.service';
 
 @Component({
   selector: 'app-mnist',
   templateUrl: './mnist.component.html',
   styleUrls: ['./mnist.component.css']
 })
+
 export class MnistComponent {
 
-  constructor(public monitoringService: MonitoringService) {
+  constructor(public monitoringService: MonitoringService, public mnistService : MnistClassificationService) {
     this.monitoringService.incrementMnistUsage();
    }
   
@@ -42,17 +44,15 @@ export class MnistComponent {
   public chartHovered(e: any): void { }
 
   onFileSelected(event){
-    this.selectedFile = <File>event.target.files[0];
-    console.log(event);
-    // let path = event.target.files[0].value; 
-    // this.tensorflowProcessing(path);
+    let fakePath = String(event.target.value);
+    let image = fakePath.slice(12);
+    (<HTMLImageElement>document.getElementById("test")).src = './assets/mnist_images/' + image;
+    this.tensorflowProcessing(image);
   }
-  // loadImage(){
-  //   const image = document.getElementById('image');
-  //   console.log(image)
-  // }
+
+
   tensorflowProcessing(imagePath){
-    console.log(String(imagePath))
+    this.mnistService.getClassificationResult(imagePath);
     this.chartDatasets = [
       {data: [0, 59, 80, 100, 500, 1000, 40, 50, 50, 50], label: 'Tensorflow Classification Percentage'}
     ];
