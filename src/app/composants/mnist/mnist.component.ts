@@ -50,11 +50,10 @@ export class MnistComponent {
     this.tensorflowProcessing(image);
   }
 
-
   tensorflowProcessing(imagePath){
-    this.mnistService.getClassificationResult(imagePath);
+    let results = this.mnistService.getClassificationResult(imagePath);
     this.chartDatasets = [
-      {data: [0, 59, 80, 100, 500, 1000, 40, 50, 50, 50], label: 'Tensorflow Classification Percentage'}
+      // {data: [0, 59, 80, 100, 500, 1000, 40, 50, 50, 50], label: 'Tensorflow Classification Percentage'}
     ];
   }
 }

@@ -21,10 +21,9 @@ export class MnistClassificationService {
     const img = new Image(28, 28);
     img.src = './assets/mnist_images/' + image;
     console.log(img.src);
-    let tempArray = []
-    tempArray.push(tf.fromPixels(img));
-    // tf.fromPixels(img).print();
-    this.model.predict(tempArray).print();
+    let test = tf.fromPixels(img).resizeNearestNeighbor([128, 128]);
+    test = test.reshape([1, 128, 128, 3]);
+    this.model.predict(test).print();
   }
 }
 
