@@ -49,4 +49,5 @@ const appRoutes: Routes = [
   providers: [SessionService, MonitoringService, MnistClassificationService],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
