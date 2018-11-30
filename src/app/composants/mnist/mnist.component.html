@@ -1,10 +1,12 @@
-<div class="file btn btn-lg btn-primary" >
+<div style="height:45px;width:120px;font-size:16px"  class="file btn btn-lg btn-primary" >
     Choose File
 
 <input type="file" (change)="onFileSelected($event)"/>
 </div>
 
-<img id="imageDisplay" src="" height="100" width="100">
+ <img  style="left: 50%" id="imageDisplay" src="" height="50" width="50">
+
+
 <div style="display: block;height:400px;width:800px;margin:0 auto;">
     <canvas mdbChart
         [chartType]="chartType"
