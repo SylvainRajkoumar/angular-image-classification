@@ -19,7 +19,7 @@ export class MnistComponent {
   public chartType:string = 'bar';
 
   public chartDatasets:Array<any> = [
-      {data: [0, 59, 80, 81, 56, 55, 40, 50, 50, 50], label: 'Tensorflow Classification Percentage'}
+      {data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], label: 'Tensorflow Classification Percentage'}
   ];
 
   public chartLabels:Array<any> = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
@@ -46,14 +46,15 @@ export class MnistComponent {
   onFileSelected(event){
     let fakePath = String(event.target.value);
     let image = fakePath.slice(12);
-    (<HTMLImageElement>document.getElementById("test")).src = './assets/mnist_images/' + image;
+    (<HTMLImageElement>document.getElementById("imageDisplay")).src = './assets/mnist_images/' + image;
     this.tensorflowProcessing(image);
   }
 
   tensorflowProcessing(imagePath){
     let results = this.mnistService.getClassificationResult(imagePath);
+
     this.chartDatasets = [
-      // {data: [0, 59, 80, 100, 500, 1000, 40, 50, 50, 50], label: 'Tensorflow Classification Percentage'}
+      {data: [0, 10, 100, 10, 0, 0, 20, 0, 0, 0], label: 'Tensorflow Classification Percentage'}
     ];
   }
 }

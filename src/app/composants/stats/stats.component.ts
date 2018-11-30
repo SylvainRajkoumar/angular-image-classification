@@ -10,6 +10,7 @@ import { MonitoringService } from '../../services/monitoring.service';
   styleUrls: ['./stats.component.css']
 })
 export class StatsComponent implements OnInit {
+  
   public chartType:string = 'pie';
 
   public chartData:Array<any> = [1 ,  1];

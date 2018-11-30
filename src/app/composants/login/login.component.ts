@@ -15,7 +15,9 @@ export class LoginComponent{
   
   constructor(private sessionService: SessionService,
     private router: Router) {
-
+      if(this.sessionService.isConnected){
+        this.router.navigate(['/']);
+      }
   }
 
   sendDataToSessionService(){

@@ -9,7 +9,8 @@ export class SessionService {
   validPassword = '1234';
   isConnected = false;
 
-  constructor() {}
+  constructor() {
+  }
 
   login(email, password){
     if(email == this.validEmail && password == this.validPassword){

@@ -17,13 +17,13 @@ export class MnistClassificationService {
     this.model = await tf.loadModel('./assets/mnist_model/model.json');
   }
 
-  getClassificationResult(image){
+   getClassificationResult(image){
     const img = new Image(28, 28);
     img.src = './assets/mnist_images/' + image;
-    console.log(img.src);
+    // console.log(img.src);
     let test = tf.fromPixels(img).resizeNearestNeighbor([128, 128]).toFloat();
     test = test.reshape([1, 128, 128, 3]);
-    this.model.predict(test).print();
+    const results = this.model.predict(test).print();
   }
 }
 
