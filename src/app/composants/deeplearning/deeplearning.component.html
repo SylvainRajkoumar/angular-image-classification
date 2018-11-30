@@ -1,4 +1,4 @@
-<!-- <html>
+<html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -7,18 +7,10 @@
     </head>
     <body class="text-center">
         <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-          <header class="masthead mb-auto">
-            <div class="inner">
-              <h3 class="masthead-brand">Deep Learning Example</h3>
-              <nav class="nav nav-masthead justify-content-center">
-                <a class="nav-link active" href="#">Home</a>
-              </nav>
-            </div>
-          </header>
     
           <main role="main" class="inner cover">
             <h1 class="cover-heading">Cats or Dogs ?</h1>
-            <p class="lead">Implémentation dans votre navigateur d'algorithmes de 'Deep Learning' (MobileNet et ResNet50) pour la classification d'images.</p>
+            <div class="lead">Implémentation dans votre navigateur d'algorithmes de 'Deep Learning' (MobileNet et ResNet50) pour la classification d'images.</div>
             <br>
             <select class="custom-select" id="choose_model" (change)="loadModel()">
                 <option selected>Selectionne un modèle</option>
@@ -26,28 +18,25 @@
                 <option value="resnet50">resnet50</option>
             </select>
 
-            <p class="lead">            
+            <div class="lead">            
                 <div class="test-image-container">
                     <img id="test-image">
                 </div>
                 <div id="loader"></div>
-            </p>
+            </div>
 
-            <p class="lead">            
+            <div class="lead">            
                 <div id="predict-result">
                     <span id="prediction"></span>
                     <div id="predict-list"></div>
                 </div>
-            </p>
+            </div>
 
-            <p class="lead">
+            <div class="lead">
                 <button class="btn btn-lg btn-danger" id="predict_btn" (click)="predict()">Predict</button>
-                <label for="select-file-image" class="btn btn-lg btn-primary" id="load_your_image" (change)="loadImageFromDisk()">
-                    Upload   
-                </label>
                 <input id="select-file-image" type="file" style="display: none;">
                 <button class="btn btn-lg btn-success" id="load_test_image" (click)="loadDemoImage()">Image aléatoire</button>
-            </p>
+            </div>
           </main>
     
           <footer class="footer-text mt-auto">
@@ -60,4 +49,4 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
-</html> -->
+</html>

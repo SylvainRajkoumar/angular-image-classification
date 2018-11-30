@@ -22,7 +22,8 @@ const appRoutes: Routes = [
   { path: 'login', component: LoginComponent},
   { path: 'mnist', component: MnistComponent},
   { path: 'stats', component: StatsComponent},
-  { path: '', component: HomeComponent}
+  { path: '', component: HomeComponent},
+  { path: 'deeplearning', component: DeeplearningComponent}
 ];
 
 @NgModule({

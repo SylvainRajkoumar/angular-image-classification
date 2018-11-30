@@ -13,9 +13,9 @@ export class StatsComponent implements OnInit {
   
   public chartType:string = 'pie';
 
-  public chartData:Array<any> = [1 ,  1];
+  public chartData:Array<any> = [0 ,  0];
 
-  public chartLabels:Array<any> = ['Mnist', 'Test'];
+  public chartLabels:Array<any> = ['Mnist', 'Cats&Dogs'];
 
   public chartColors:Array<any> = [{
       hoverBorderColor: ['rgba(0, 0, 0, 0.1)', 'rgba(0, 0, 0, 0.1)'],
@@ -33,6 +33,7 @@ export class StatsComponent implements OnInit {
     }
 
     this.chartData[0] = this.monitoringService.getMnistUsageCount()
+    this.chartData[1] = this.monitoringService.getcatsDogsUsageCount();
   }
 
  

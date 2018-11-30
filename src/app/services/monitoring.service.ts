@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class MonitoringService {
   mnistUsageCount = 0;
+  catsDogsUsageCount = 0;
 
   constructor() { }
 
@@ -12,8 +13,15 @@ export class MonitoringService {
     this.mnistUsageCount++;
   }
 
+  incrementcatsDogsUsage(){
+    this.catsDogsUsageCount++;
+  }
   getMnistUsageCount(){
     return this.mnistUsageCount;
+  }
+  
+  getcatsDogsUsageCount(){
+    return this.catsDogsUsageCount;
   }
 
 }
