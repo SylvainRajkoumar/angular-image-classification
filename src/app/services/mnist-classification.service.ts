@@ -7,10 +7,11 @@ const tf = require('@tensorflow/tfjs');
 })
 
 export class MnistClassificationService {
+
   model = null;
-  predictions = null;
+
   constructor() { 
-    this.loadModel()
+    this.loadModel();
   }
 
   async loadModel(){
@@ -20,10 +21,9 @@ export class MnistClassificationService {
    getClassificationResult(image){
     const img = new Image(28, 28);
     img.src = './assets/mnist_images/' + image;
-    // console.log(img.src);
-    let test = tf.fromPixels(img).resizeNearestNeighbor([128, 128]).toFloat();
-    test = test.reshape([1, 128, 128, 3]);
-    const results = this.model.predict(test).print();
+    let resizeImage = tf.fromPixels(img).resizeNearestNeighbor([128, 128]).toFloat();
+    resizeImage = resizeImage.reshape([1, 128, 128, 3]);
+    const results = this.model.predict(resizeImage).print();
   }
 }
 

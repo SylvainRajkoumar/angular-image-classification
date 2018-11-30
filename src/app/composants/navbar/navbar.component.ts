@@ -12,9 +12,6 @@ export class NavbarComponent implements OnInit {
 
   constructor(private sessionService: SessionService,
     private router: Router) {
-      // if(this.sessionService.isConnected){
-      //   // (<HTMLElement>document.getElementById("test").children[1]).style.display = "none"
-      // }
    }
    logout(){
      if(this.sessionService.isConnected){

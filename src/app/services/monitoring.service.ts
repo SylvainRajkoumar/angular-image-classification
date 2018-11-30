@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class MonitoringService {
+  
   mnistUsageCount = 0;
   catsDogsUsageCount = 0;
 

@@ -5,11 +5,13 @@ import { Injectable } from '@angular/core';
 })
 
 export class SessionService {
+
   validEmail = 'Test';
   validPassword = '1234';
   isConnected = false;
 
   constructor() {
+
   }
 
   login(email, password){
@@ -17,6 +19,7 @@ export class SessionService {
       this.isConnected = true;
     }
   }
+  
   logout(){
     this.isConnected = false;
   }

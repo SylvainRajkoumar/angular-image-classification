@@ -39,8 +39,8 @@ export class DeeplearningComponent implements OnInit {
   }
   
   loadImageFromDisk() {
-      document.getElementById("predict-result").style.display = "table-cell";
-      document.getElementById("prediction").innerHTML = "Click predict to find my label!";
+    // document.getElementById("predict-result").style.display = "table-cell";
+    // document.getElementById("prediction").innerHTML = "Click predict to find my label!";
     // this.renderImage(this.files[0]);
   };
   

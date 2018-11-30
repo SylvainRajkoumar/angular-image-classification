@@ -36,7 +36,6 @@ export class StatsComponent implements OnInit {
     this.chartData[1] = this.monitoringService.getcatsDogsUsageCount();
   }
 
- 
   public chartClicked(e: any): void { }
   public chartHovered(e: any): void { }
 
