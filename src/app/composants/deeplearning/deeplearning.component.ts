@@ -41,7 +41,6 @@ export class DeeplearningComponent implements OnInit {
   //   this.renderImage(this.files[0]);
   // };
   
-  
   // async loadModel() {
   //     let modelName = (<HTMLInputElement>document.getElementById('choose_model')).value
   //     if (modelName === '') return;
