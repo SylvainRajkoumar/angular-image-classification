@@ -4,7 +4,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Cats vs Dogs - Deep Learning</title>
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body class="text-center">
         <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
@@ -21,7 +20,7 @@
             <h1 class="cover-heading">Cats or Dogs ?</h1>
             <p class="lead">Implémentation dans votre navigateur d'algorithmes de 'Deep Learning' (MobileNet et ResNet50) pour la classification d'images.</p>
             <br>
-            <select class="custom-select" id="choose_model">
+            <select class="custom-select" id="choose_model" (change)="loadModel()">
                 <option selected>Selectionne un modèle</option>
                 <option value="mobilenet">mobilenet</option>
                 <option value="resnet50">resnet50</option>
@@ -42,12 +41,12 @@
             </p>
 
             <p class="lead">
-                <button class="btn btn-lg btn-danger" id="predict_btn">Predict</button>
-                <label for="select-file-image" class="btn btn-lg btn-primary" id="load_your_image">
+                <button class="btn btn-lg btn-danger" id="predict_btn" (click)="predict()">Predict</button>
+                <label for="select-file-image" class="btn btn-lg btn-primary" id="load_your_image" (change)="loadImageFromDisk()">
                     Upload   
                 </label>
                 <input id="select-file-image" type="file" style="display: none;">
-                <button class="btn btn-lg btn-success" id="load_test_image">Image aléatoire</button>
+                <button class="btn btn-lg btn-success" id="load_test_image" (click)="loadDemoImage()">Image aléatoire</button>
             </p>
           </main>
     
