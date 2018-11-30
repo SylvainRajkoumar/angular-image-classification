@@ -16,11 +16,13 @@ import { MonitoringService } from './services/monitoring.service';
 import { MDBBootstrapModule } from 'angular-bootstrap-md'
 import { MnistClassificationService } from './services/mnist-classification.service';
 import { DeeplearningComponent } from './composants/deeplearning/deeplearning.component';
+import { HomeComponent } from './composants/home/home.component';
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent},
   { path: 'mnist', component: MnistComponent},
-  { path: 'stats', component: StatsComponent}
+  { path: 'stats', component: StatsComponent},
+  { path: '', component: HomeComponent}
 ];
 
 @NgModule({
@@ -31,7 +33,8 @@ const appRoutes: Routes = [
     MnistComponent,
     FooterComponent,
     NavbarComponent,
-    DeeplearningComponent
+    DeeplearningComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
