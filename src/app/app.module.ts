@@ -15,6 +15,7 @@ import { SessionService } from './services/session.service';
 import { MonitoringService } from './services/monitoring.service';
 import { MDBBootstrapModule } from 'angular-bootstrap-md'
 import { MnistClassificationService } from './services/mnist-classification.service';
+import { DeeplearningComponent } from './composants/deeplearning/deeplearning.component';
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent},
@@ -29,7 +30,8 @@ const appRoutes: Routes = [
     StatsComponent,
     MnistComponent,
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
+    DeeplearningComponent
   ],
   imports: [
     BrowserModule,
