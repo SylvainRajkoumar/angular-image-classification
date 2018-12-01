@@ -111,9 +111,9 @@ export class DeeplearningComponent implements OnInit {
     var ul = document.getElementById("predict-list");
     ul.innerHTML = "";
     results.forEach( (p) => {
-      console.log(p.className + " " + p.probability.toFixed(6));
+      console.log(p.className + " " + p.probability);
       var li = document.createElement("li");
-      li.innerHTML = p.className + " " + p.probability.toFixed(6);
+      li.innerHTML = p.className + " " + p.probability;
       ul.appendChild(li);
     });
   };
