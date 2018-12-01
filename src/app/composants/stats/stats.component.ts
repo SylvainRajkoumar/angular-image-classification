@@ -27,6 +27,7 @@ export class StatsComponent implements OnInit {
   public chartOptions:any = {
       responsive: true
   };
+  
   constructor(public sessionService: SessionService, private router: Router, public monitoringService: MonitoringService) { 
     if(this.sessionService.isConnected == false){
       this.router.navigate(['/login']);

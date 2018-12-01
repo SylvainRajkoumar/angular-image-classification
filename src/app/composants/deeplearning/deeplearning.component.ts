@@ -101,7 +101,7 @@ export class DeeplearningComponent implements OnInit {
           probability: p,
           className: this.CLASSES[i]
         };
-      }).sort( (a, b) => {
+      }).sort( (a: any, b: any) => {
         return b.probability - a.probability;
       }).slice(0, 5);
   

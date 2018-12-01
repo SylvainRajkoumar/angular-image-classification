@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class MonitoringService {
-  
+
   mnistUsageCount = 0;
   catsDogsUsageCount = 0;
 
@@ -17,6 +17,7 @@ export class MonitoringService {
   incrementcatsDogsUsage(){
     this.catsDogsUsageCount++;
   }
+  
   getMnistUsageCount(){
     return this.mnistUsageCount;
   }
