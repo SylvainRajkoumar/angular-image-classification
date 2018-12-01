@@ -1,30 +1,17 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add mdboostrap
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js instal
 
 PATH: 
-  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\HashiCorp\Vagrant\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\CMake\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Users\Sylvain\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Microsoft VS Code\bin;D:\Documentation stage\install\x64\vc15\bin;C:\Users\Sylvain\AppData\Roaming\npm;C:\Program Files\Docker Toolbox;C:\Users\Sylvain\AppData\Local\Yarn\bin;C:\Program Files\nodejs;C:\Users\Sylvain\AppData\Roaming\Dashlane\6.1846.0.15081\bin\Firefox_Extension\{442718d9-475e-452a-b3e1-fb1ee16b8e9f}\components;C:\Users\Sylvain\AppData\Roaming\Dashlane\6.1846.0.15081\ucrt;C:\Users\Sylvain\AppData\Roaming\Dashlane\6.1846.0.15081\bin\Qt;C:\Users\Sylvain\AppData\Roaming\Dashlane\6.1846.0.15081\ucrt;C:\Users\Sylvain\AppData\Roaming\Dashlane\6.1846.0.15081\bin\Ssl;C:\Program Files\JetBrains\WebStorm 2018.3\bin;
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Users\thoma\AppData\Local\Microsoft\WindowsApps;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\thoma\AppData\Roaming\npm;C:\Users\thoma\AppData\Local\Yarn\bin;C:\opencv\build\x64\vc14\bin;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\HashiCorp\Vagrant\bin;C:\Program Files\CMake\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\thoma\AppData\Local\Microsoft\WindowsApps;C:\Users\thoma\AppData\Roaming\npm;C:\Users\thoma\AppData\Local\Yarn\bin;;D:\Docker Toolbox
 
 Yarn version: 
-  1.10.1
+  1.5.1
 
 Node version: 
-  8.12.0
+  9.11.1
 
 Platform: 
   win32 x64
-
-Trace: 
-  Error: https://registry.yarnpkg.com/mdboostrap: Not found
-      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:60182:18)
-      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:120166:22)
-      at emitTwo (events.js:126:13)
-      at Request.emit (events.js:214:7)
-      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:121138:10)
-      at emitOne (events.js:116:13)
-      at Request.emit (events.js:211:7)
-      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:121060:12)
-      at Object.onceWrapper (events.js:313:30)
-      at emitNone (events.js:111:20)
 
 npm manifest: 
   {
@@ -51,8 +38,13 @@ npm manifest:
       "@angular/platform-browser-dynamic": "~7.0.0",
       "@angular/router": "~7.0.0",
       "@ng-bootstrap/ng-bootstrap": "^4.0.0",
+      "@tensorflow/tfjs": "^0.13.5",
+      "angular-bootstrap-md": "^7.0.0",
       "bootstrap": "^4.1.3",
+      "chart.js": "2.5.0",
       "core-js": "^2.5.4",
+      "font-awesome": "^4.7.0",
+      "hammerjs": "^2.0.8",
       "rxjs": "~6.3.3",
       "rxjs-compat": "^6.3.3",
       "zone.js": "~0.8.26"
@@ -377,6 +369,13 @@ Lockfile:
       lodash "^4.17.10"
       to-fast-properties "^2.0.0"
   
+  "@ng-bootstrap/ng-bootstrap@^4.0.0":
+    version "4.0.0"
+    resolved "https://registry.yarnpkg.com/@ng-bootstrap/ng-bootstrap/-/ng-bootstrap-4.0.0.tgz#e56aafc8e3ae900b88d528303a5962cc363088ed"
+    integrity sha512-jWVHRDUYppOSvzclP9d3lVWGUO+y0X9W6jdfyYehDkJCY0MFgtwefLYMtQ/NJ4niPzm2d/zZn+Bte48iIn0nKw==
+    dependencies:
+      tslib "^1.9.0"
+  
   "@ngtools/webpack@7.0.6":
     version "7.0.6"
     resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-7.0.6.tgz#cc4f4189765f6743417b4eee946fb69590f93ce1"
@@ -387,6 +386,59 @@ Lockfile:
       rxjs "6.3.3"
       tree-kill "1.2.0"
       webpack-sources "1.2.0"
+  
+  "@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
+    version "1.1.2"
+    resolved "https://registry.yarnpkg.com/@protobufjs/aspromise/-/aspromise-1.1.2.tgz#9b8b0cc663d669a7d8f6f5d0893a14d348f30fbf"
+    integrity sha1-m4sMxmPWaafY9vXQiToU00jzD78=
+  
+  "@protobufjs/base64@^1.1.2":
+    version "1.1.2"
+    resolved "https://registry.yarnpkg.com/@protobufjs/base64/-/base64-1.1.2.tgz#4c85730e59b9a1f1f349047dbf24296034bb2735"
+    integrity sha512-AZkcAA5vnN/v4PDqKyMR5lx7hZttPDgClv83E//FMNhR2TMcLUhfRUBHCmSl0oi9zMgDDqRUJkSxO3wm85+XLg==
+  
+  "@protobufjs/codegen@^2.0.4":
+    version "2.0.4"
+    resolved "https://registry.yarnpkg.com/@protobufjs/codegen/-/codegen-2.0.4.tgz#7ef37f0d010fb028ad1ad59722e506d9262815cb"
+    integrity sha512-YyFaikqM5sH0ziFZCN3xDC7zeGaB/d0IUb9CATugHWbd1FRFwWwt4ld4OYMPWu5a3Xe01mGAULCdqhMlPl29Jg==
+  
+  "@protobufjs/eventemitter@^1.1.0":
+    version "1.1.0"
+    resolved "https://registry.yarnpkg.com/@protobufjs/eventemitter/-/eventemitter-1.1.0.tgz#355cbc98bafad5978f9ed095f397621f1d066b70"
+    integrity sha1-NVy8mLr61ZePntCV85diHx0Ga3A=
+  
+  "@protobufjs/fetch@^1.1.0":
+    version "1.1.0"
+    resolved "https://registry.yarnpkg.com/@protobufjs/fetch/-/fetch-1.1.0.tgz#ba99fb598614af65700c1619ff06d454b0d84c45"
+    integrity sha1-upn7WYYUr2VwDBYZ/wbUVLDYTEU=
+    dependencies:
+      "@protobufjs/aspromise" "^1.1.1"
+      "@protobufjs/inquire" "^1.1.0"
+  
+  "@protobufjs/float@^1.0.2":
+    version "1.0.2"
+    resolved "https://registry.yarnpkg.com/@protobufjs/float/-/float-1.0.2.tgz#5e9e1abdcb73fc0a7cb8b291df78c8cbd97b87d1"
+    integrity sha1-Xp4avctz/Ap8uLKR33jIy9l7h9E=
+  
+  "@protobufjs/inquire@^1.1.0":
+    version "1.1.0"
+    resolved "https://registry.yarnpkg.com/@protobufjs/inquire/-/inquire-1.1.0.tgz#ff200e3e7cf2429e2dcafc1140828e8cc638f089"
+    integrity sha1-/yAOPnzyQp4tyvwRQIKOjMY48Ik=
+  
+  "@protobufjs/path@^1.1.2":
+    version "1.1.2"
+    resolved "https://registry.yarnpkg.com/@protobufjs/path/-/path-1.1.2.tgz#6cc2b20c5c9ad6ad0dccfd21ca7673d8d7fbf68d"
+    integrity sha1-bMKyDFya1q0NzP0hynZz2Nf79o0=
+  
+  "@protobufjs/pool@^1.1.0":
+    version "1.1.0"
+    resolved "https://registry.yarnpkg.com/@protobufjs/pool/-/pool-1.1.0.tgz#09fd15f2d6d3abfa9b65bc366506d6ad7846ff54"
+    integrity sha1-Cf0V8tbTq/qbZbw2ZQbWrXhG/1Q=
+  
+  "@protobufjs/utf8@^1.1.0":
+    version "1.1.0"
+    resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
+    integrity sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=
   
   "@schematics/angular@7.0.6":
     version "7.0.6"
@@ -409,6 +461,38 @@ Lockfile:
       semver "5.5.1"
       semver-intersect "1.4.0"
   
+  "@tensorflow/tfjs-converter@0.6.7":
+    version "0.6.7"
+    resolved "https://registry.yarnpkg.com/@tensorflow/tfjs-converter/-/tfjs-converter-0.6.7.tgz#d45c5f17c5c3de638ded5354d16d450a8cb97676"
+    integrity sha512-7hsbLbx0KM1Bew00kVoslrnNMOUTyP9NZLDl03cEkrCbEYsaG7jouLxHVz+B0A6/ZPE1N40xmD2JRnu54VKT8g==
+    dependencies:
+      "@types/long" "~3.0.32"
+      protobufjs "~6.8.6"
+  
+  "@tensorflow/tfjs-core@0.13.11":
+    version "0.13.11"
+    resolved "https://registry.yarnpkg.com/@tensorflow/tfjs-core/-/tfjs-core-0.13.11.tgz#f5ef7e52c113b74bd3cabd7464c195cac0c302b4"
+    integrity sha512-jHTD7LbpC3JpsP2mBVD3ZiYV+Xr/l91zpA5HpQVnbdNat5J/IJHabeYwYtukiVyN4amHqyFvGFtX/gjLD82rXg==
+    dependencies:
+      "@types/seedrandom" "2.4.27"
+      "@types/webgl-ext" "0.0.30"
+      "@types/webgl2" "0.0.4"
+      seedrandom "2.4.3"
+  
+  "@tensorflow/tfjs-layers@0.8.5":
+    version "0.8.5"
+    resolved "https://registry.yarnpkg.com/@tensorflow/tfjs-layers/-/tfjs-layers-0.8.5.tgz#40808ae9c9cc692ab07020d314822ae92860ee1d"
+    integrity sha512-yQoVyh5q3Hh3YmLXGvKAkgsLVFe0VQBRmgVxJkxzzWhCB+NrjUXU/IzHzCRoBcgcXKZTY9/XE5IcvPmJw9cIXw==
+  
+  "@tensorflow/tfjs@^0.13.5":
+    version "0.13.5"
+    resolved "https://registry.yarnpkg.com/@tensorflow/tfjs/-/tfjs-0.13.5.tgz#421fd96bb02ed87ae145c0d87bbb86cb2862c1f3"
+    integrity sha512-a0sbY2IShg+hAD+Es8fy1Ey/afoks4fxSi+PVSZc1st51brCnO3qBbqwDDctRNwx/EOfAroS8IWIKgaWTpsflg==
+    dependencies:
+      "@tensorflow/tfjs-converter" "0.6.7"
+      "@tensorflow/tfjs-core" "0.13.11"
+      "@tensorflow/tfjs-layers" "0.8.5"
+  
   "@types/jasmine@*":
     version "3.3.0"
     resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-3.3.0.tgz#6b0e4b0192367d77e438ff660ccc4487c9602e7b"
@@ -426,6 +510,21 @@ Lockfile:
     dependencies:
       "@types/jasmine" "*"
   
+  "@types/long@^4.0.0":
+    version "4.0.0"
+    resolved "https://registry.yarnpkg.com/@types/long/-/long-4.0.0.tgz#719551d2352d301ac8b81db732acb6bdc28dbdef"
+    integrity sha512-1w52Nyx4Gq47uuu0EVcsHBxZFJgurQ+rTKS3qMHxR1GY2T8c2AJYd6vZoZ9q1rupaDjU0yT+Jc2XTyXkjeMA+Q==
+  
+  "@types/long@~3.0.32":
+    version "3.0.32"
+    resolved "https://registry.yarnpkg.com/@types/long/-/long-3.0.32.tgz#f4e5af31e9e9b196d8e5fca8a5e2e20aa3d60b69"
+    integrity sha512-ZXyOOm83p7X8p3s0IYM3VeueNmHpkk/yMlP8CLeOnEcu6hIwPH7YjZBvhQkR0ZFS2DqZAxKtJ/M5fcuv3OU5BA==
+  
+  "@types/node@^10.1.0":
+    version "10.12.10"
+    resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.10.tgz#4fa76e6598b7de3f0cb6ec3abacc4f59e5b3a2ce"
+    integrity sha512-8xZEYckCbUVgK8Eg7lf5Iy4COKJ5uXlnIOnePN0WUwSQggy9tolM+tDJf7wMOnT/JT/W9xDYIaYggt3mRV2O5w==
+  
   "@types/node@^6.0.46":
     version "6.14.2"
     resolved "https://registry.yarnpkg.com/@types/node/-/node-6.14.2.tgz#40b3dbb1221c7d66802cbcc32fe3b85e54569c77"
@@ -441,10 +540,25 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/@types/q/-/q-0.0.32.tgz#bd284e57c84f1325da702babfc82a5328190c0c5"
     integrity sha1-vShOV8hPEyXacCur/IKlMoGQwMU=
   
+  "@types/seedrandom@2.4.27":
+    version "2.4.27"
+    resolved "https://registry.yarnpkg.com/@types/seedrandom/-/seedrandom-2.4.27.tgz#9db563937dd86915f69092bc43259d2f48578e41"
+    integrity sha1-nbVjk33YaRX2kJK8QyWdL0hXjkE=
+  
   "@types/selenium-webdriver@^3.0.0":
     version "3.0.13"
     resolved "https://registry.yarnpkg.com/@types/selenium-webdriver/-/selenium-webdriver-3.0.13.tgz#deb799c641773c5e367abafc92d1e733d62cddd7"
     integrity sha512-rI0LGoMiZGUM+tjDakQpwZOvcmQoubiJ7hxqrYU12VRxBuGGvOThxrBOU/QmJKlKg1WG6FMzuvcEyLffvVSsmw==
+  
+  "@types/webgl-ext@0.0.30":
+    version "0.0.30"
+    resolved "https://registry.yarnpkg.com/@types/webgl-ext/-/webgl-ext-0.0.30.tgz#0ce498c16a41a23d15289e0b844d945b25f0fb9d"
+    integrity sha512-LKVgNmBxN0BbljJrVUwkxwRYqzsAEPcZOe6S2T6ZaBDIrFp0qu4FNlpc5sM1tGbXUYFgdVQIoeLk1Y1UoblyEg==
+  
+  "@types/webgl2@0.0.4":
+    version "0.0.4"
+    resolved "https://registry.yarnpkg.com/@types/webgl2/-/webgl2-0.0.4.tgz#c3b0f9d6b465c66138e84e64cb3bdf8373c2c279"
+    integrity sha512-PACt1xdErJbMUOUweSrbVM7gSIYm1vTncW2hF6Os/EeWi6TXYAYMPp+8v6rzHmypE5gHrxaxZNXgMkJVIdZpHw==
   
   "@webassemblyjs/ast@1.7.6":
     version "1.7.6"
@@ -694,6 +808,11 @@ Lockfile:
     version "1.0.1"
     resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
     integrity sha1-SlKCrBZHKek2Gbz9OtFR+BfOkfU=
+  
+  angular-bootstrap-md@^7.0.0:
+    version "7.0.0"
+    resolved "https://registry.yarnpkg.com/angular-bootstrap-md/-/angular-bootstrap-md-7.0.0.tgz#4e5df83c65f782652a81e1aec7760d94f015d76d"
+    integrity sha512-qolVGNLEKCLPA+M57nmosCiiqXiJhfUJrIalBjlE4qRKj41MZT5gxWY+S5JHtwu3KkrSeOQFRat3/yHDtSVY5w==
   
   ansi-colors@^3.0.0:
     version "3.2.1"
@@ -1463,6 +1582,29 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/chardet/-/chardet-0.7.0.tgz#90094849f0937f2eedc2425d0d28a9e5f0cbad9e"
     integrity sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==
   
+  chart.js@2.5.0:
+    version "2.5.0"
+    resolved "https://registry.yarnpkg.com/chart.js/-/chart.js-2.5.0.tgz#fe6e751a893769f56e72bee5ad91207e1c592957"
+    integrity sha1-/m51Gok3afVucr7lrZEgfhxZKVc=
+    dependencies:
+      chartjs-color "^2.0.0"
+      moment "^2.10.6"
+  
+  chartjs-color-string@^0.5.0:
+    version "0.5.0"
+    resolved "https://registry.yarnpkg.com/chartjs-color-string/-/chartjs-color-string-0.5.0.tgz#8d3752d8581d86687c35bfe2cb80ac5213ceb8c1"
+    integrity sha512-amWNvCOXlOUYxZVDSa0YOab5K/lmEhbFNKI55PWc4mlv28BDzA7zaoQTGxSBgJMHIW+hGX8YUrvw/FH4LyhwSQ==
+    dependencies:
+      color-name "^1.0.0"
+  
+  chartjs-color@^2.0.0:
+    version "2.2.0"
+    resolved "https://registry.yarnpkg.com/chartjs-color/-/chartjs-color-2.2.0.tgz#84a2fb755787ed85c39dd6dd8c7b1d88429baeae"
+    integrity sha1-hKL7dVeH7YXDndbdjHsdiEKbrq4=
+    dependencies:
+      chartjs-color-string "^0.5.0"
+      color-convert "^0.5.3"
+  
   chokidar@2.0.4, chokidar@^2.0.0, chokidar@^2.0.2, chokidar@^2.0.3:
     version "2.0.4"
     resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-2.0.4.tgz#356ff4e2b0e8e43e322d18a372460bbcf3accd26"
@@ -1621,6 +1763,11 @@ Lockfile:
       map-visit "^1.0.0"
       object-visit "^1.0.0"
   
+  color-convert@^0.5.3:
+    version "0.5.3"
+    resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-0.5.3.tgz#bdb6c69ce660fadffe0b0007cc447e1b9f7282bd"
+    integrity sha1-vbbGnOZg+t/+CwAHzER+G59ygr0=
+  
   color-convert@^1.9.0:
     version "1.9.3"
     resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-1.9.3.tgz#bb71850690e1f136567de629d2d5471deda4c1e8"
@@ -1632,6 +1779,11 @@ Lockfile:
     version "1.1.3"
     resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.3.tgz#a7d0558bd89c42f795dd42328f740831ca53bc25"
     integrity sha1-p9BVi9icQveV3UIyj3QIMcpTvCU=
+  
+  color-name@^1.0.0:
+    version "1.1.4"
+    resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
+    integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
   
   colors@1.1.2:
     version "1.1.2"
@@ -2797,6 +2949,11 @@ Lockfile:
     dependencies:
       debug "=3.1.0"
   
+  font-awesome@^4.7.0:
+    version "4.7.0"
+    resolved "https://registry.yarnpkg.com/font-awesome/-/font-awesome-4.7.0.tgz#8fa8cf0411a1a31afd07b06d2902bb9fc815a133"
+    integrity sha1-j6jPBBGhoxr9B7BtKQK7n8gVoTM=
+  
   for-in@^0.1.3:
     version "0.1.8"
     resolved "https://registry.yarnpkg.com/for-in/-/for-in-0.1.8.tgz#d8773908e31256109952b1fdb9b3fa867d2775e1"
@@ -3071,6 +3228,11 @@ Lockfile:
     version "4.1.15"
     resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.15.tgz#ffb703e1066e8a0eeaa4c8b80ba9253eeefbfb00"
     integrity sha512-6uHUhOPEBgQ24HM+r6b/QwWfZq+yiFcipKFrOFiBEnWdy5sdzYoi+pJeQaPI5qOLRFqWmAXUPQNsielzdLoecA==
+  
+  hammerjs@^2.0.8:
+    version "2.0.8"
+    resolved "https://registry.yarnpkg.com/hammerjs/-/hammerjs-2.0.8.tgz#04ef77862cff2bb79d30f7692095930222bf60f1"
+    integrity sha1-BO93hiz/K7edMPdpIJWTAiK/YPE=
   
   handle-thing@^1.2.5:
     version "1.2.5"
@@ -4243,6 +4405,11 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/loglevel/-/loglevel-1.6.1.tgz#e0fc95133b6ef276cdc8887cdaf24aa6f156f8fa"
     integrity sha1-4PyVEztu8nbNyIh82vJKpvFW+Po=
   
+  long@^4.0.0:
+    version "4.0.0"
+    resolved "https://registry.yarnpkg.com/long/-/long-4.0.0.tgz#9a7b71cfb7d361a194ea555241c92f7468d5bf28"
+    integrity sha512-XsP+KhQif4bjX1kbuSiySJFNAehNxgLb6hPRGJ9QsUr8ajHkuXGdrHmFUTUUXhDwVX2R5bY4JNZEwbUiMhV+MA==
+  
   loose-envify@^1.0.0:
     version "1.4.0"
     resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
@@ -4576,6 +4743,11 @@ Lockfile:
     integrity sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
     dependencies:
       minimist "0.0.8"
+  
+  moment@^2.10.6:
+    version "2.22.2"
+    resolved "https://registry.yarnpkg.com/moment/-/moment-2.22.2.tgz#3c257f9839fc0e93ff53149632239eb90783ff66"
+    integrity sha1-PCV/mDn8DpP/UxSWMiOeuQeD/2Y=
   
   move-concurrently@^1.0.1:
     version "1.0.1"
@@ -5415,6 +5587,25 @@ Lockfile:
     dependencies:
       asap "~2.0.3"
   
+  protobufjs@~6.8.6:
+    version "6.8.8"
+    resolved "https://registry.yarnpkg.com/protobufjs/-/protobufjs-6.8.8.tgz#c8b4f1282fd7a90e6f5b109ed11c84af82908e7c"
+    integrity sha512-AAmHtD5pXgZfi7GMpllpO3q1Xw1OYldr+dMUlAnffGTAhqkg72WdmSY71uKBF/JuyiKs8psYbtKrhi0ASCD8qw==
+    dependencies:
+      "@protobufjs/aspromise" "^1.1.2"
+      "@protobufjs/base64" "^1.1.2"
+      "@protobufjs/codegen" "^2.0.4"
+      "@protobufjs/eventemitter" "^1.1.0"
+      "@protobufjs/fetch" "^1.1.0"
+      "@protobufjs/float" "^1.0.2"
+      "@protobufjs/inquire" "^1.1.0"
+      "@protobufjs/path" "^1.1.2"
+      "@protobufjs/pool" "^1.1.0"
+      "@protobufjs/utf8" "^1.1.0"
+      "@types/long" "^4.0.0"
+      "@types/node" "^10.1.0"
+      long "^4.0.0"
+  
   protractor@~5.4.0:
     version "5.4.1"
     resolved "https://registry.yarnpkg.com/protractor/-/protractor-5.4.1.tgz#011a99e38df7aa45d22455b889ffbb13a6ce0bd9"
@@ -6021,6 +6212,11 @@ Lockfile:
     dependencies:
       js-base64 "^2.1.8"
       source-map "^0.4.2"
+  
+  seedrandom@2.4.3:
+    version "2.4.3"
+    resolved "https://registry.yarnpkg.com/seedrandom/-/seedrandom-2.4.3.tgz#2438504dad33917314bff18ac4d794f16d6aaecc"
+    integrity sha1-JDhQTa0zkXMUv/GKxNeU8W1qrsw=
   
   select-hose@^2.0.0:
     version "2.0.0"
@@ -7548,3 +7744,16 @@ Lockfile:
     version "0.8.26"
     resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.26.tgz#7bdd72f7668c5a7ad6b118148b4ea39c59d08d2d"
     integrity sha512-W9Nj+UmBJG251wkCacIkETgra4QgBo/vgoEkb4a2uoLzpQG7qF9nzwoLXWU5xj3Fg2mxGvEDh47mg24vXccYjA==
+
+Trace: 
+  Error: Command "instal" not found.
+      at new MessageError (C:\Program Files (x86)\Yarn\lib\cli.js:186:110)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:87307:17
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:98:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:116:14
+      at new Promise (<anonymous>)
+      at new F (C:\Program Files (x86)\Yarn\lib\cli.js:23451:28)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:95:12
+      at runCommand (C:\Program Files (x86)\Yarn\lib\cli.js:87312:22)
+      at Object.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:87412:14)
