@@ -1,7 +1,4 @@
 node_modules/
-tfjs-models-resnet50/
-tfjs-models-mobilenet/
-test1/
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
